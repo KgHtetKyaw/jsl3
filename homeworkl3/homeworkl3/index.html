@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework L3</title>
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="background" class="background"></div>
+
+        <div class="first-container">
+
+            <div id="container-pass" class="container-pass">
+
+                <h1>Password Strength Background</h1>
+                <p>WDF-4076's Homework</p>
+
+                <form id="form" action="" method="">
+                    <div class="form-group">
+                        <label for="username">User Name</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username" autocomplete="off"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Passowrd</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" autocomplete="off"/>
+                        <i id="eye" class="fas fa-eye"></i>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="container-stopwatch">
+                <h1 id="title">Welcome</h1>
+                <div class="display">00 : 000</div>
+                <button id="goto">Go To Todo List</button>
+            </div>
+
+            <div class="container-todolist">
+                <h1 id="todolisttitle">Todo List</h1>
+                
+                    <form id="todoform" action="" method="">
+                        <input name="todolist" id="todolist" class="todolist" placeholder="Enter your todo" autocomplete="off" />
+                        
+                        <ul id="todoul" class="todoul"></ul>
+                            
+                    </form>
+                
+
+                <small>Left click to toggle complete. <br/> Right click to delete todo</small>
+
+            </div>
+
+        </div>
+
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>

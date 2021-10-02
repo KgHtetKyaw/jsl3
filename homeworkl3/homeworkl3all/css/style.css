@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: rgba(0,0,0,0.9);*/
+    margin: 0;
+}
+
+header{
+    font-family: sans-serif;
+    max-height: 100vh;
+}
+
+.menu-container{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(45deg,black 50%,royalblue 50%);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-container img{
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    border: 0;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.menu-container h1{
+    display: inline-block;
+    color: royalblue;
+
+    position: absolute;
+    left: 85px;
+}
+
+.menu-container .menu-btns{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+
+    background-color: rgba(0,0,0,1);
+
+    border: none;
+    border-radius: 5px;
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.menu-container .menu-btns button{
+    background-color: transparent;
+    border: none;
+
+    position: relative;
+}
+
+.menu-container .menu-btns button i{
+    position: absolute;
+
+    cursor: pointer;
+}
+
+.menu-container .menu-btns:active{
+    transform: scale(0.98);
+}
+
+.menu-container .menu-btns.show button i{
+    animation: menubtnani 3s linear infinite;
+}
+
+.menu-container .menu-btns:hover .btn1{
+    animation: menubtnani 3s linear infinite;
+}
+.menu-container .menu-btns:hover .btn2{
+    animation: menubtnani 3s linear reverse infinite;
+}
+
+.menu-container .menu-btns:hover .btn3{
+    animation: menubtnani 3s linear infinite;
+}
+
+.menu-container .menu-btns button:nth-of-type(1){
+    color: red;
+    font-size: 20px;
+    top: -20px;
+    left: 1px;
+}
+
+.menu-container .menu-btns button:nth-of-type(2){
+    color: green;
+    font-size: 15px;
+    left: -10px;
+}
+
+.menu-container .menu-btns button:nth-of-type(3){
+    color: yellow;
+    font-size: 16px;
+    top: -47px;
+    left: 22px;
+}
+
+@keyframes menubtnani{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.menu-icons a{
+    color: #fff;
+}
+
+.menu-menus .menu-icons{
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+
+    font-size: 23px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 23px;
+
+    transition: all 0.5s;
+}
+
+.menu-menus.show .menu-icons:nth-of-type(1){
+    top: 5.5rem;
+}
+
+.menu-menus.show .menu-icons:nth-of-type(2){
+    top: 9rem;
+}
+
+.menu-menus.show .menu-icons:nth-of-type(3){
+    top: 12.5rem;
+}
+
+.menu-menus.show .menu-icons:nth-of-type(4){
+    top: 16rem;
+}
+
+.menu-menus.show .menu-icons:nth-of-type(5){
+    top: 19.5rem;
+}
+
+
+/* Start Animated Login UI */
+.animatedloginui-container{
+    font-family: sans-serif;
+    height: 100vh;
+    background: darkslateblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+.animatedui-container{
+    width: 65rem;
+    padding: 20px;
+}
+
+.main-container{
+    width: 100%;
+    /*height: 35rem;*/
+    border-radius: 5px;
+    box-shadow: 3px 3px 30px rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.img-container{
+    width: 50%;
+    height: 100%;
+    background-color: royalblue;
+
+    padding: 5rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.form-container{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.animated-login-title{
+    color: royalblue;
+
+    position: absolute;
+    top: -90px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.form-control{
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid royalblue;
+
+    font-size: 20px;
+    padding: 5px;
+    margin: 30px 0;
+}
+
+.form-control:focus{
+    outline: 0;
+}
+
+.form-container label{
+    color: royalblue;
+
+    position: absolute;
+}
+
+.form-label-username{
+    top: 57px;
+    left: 25px;
+}
+
+.form-label-password{
+    top: 153px;
+    left: 25px;
+}
+
+.form-label-username.active{
+    top: 20px;
+}
+
+.form-label-password.active{
+    top: 120px;
+}
+
+/* End Animated Login UI */

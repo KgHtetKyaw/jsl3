@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.background{
+    background-image: url("../img/bg4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -50px;
+    right: -100px;
+
+    filter: blur(20px);
+
+    z-index: -1;
+}
+
+.first-container{
+    width: 100%
+    position: relative;
+}
+
+.container-pass{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 20px rgba(127,127,127,0.4);
+
+    border: 6px solid rgba(0,0,0,0.6);
+    border-radius: 10px;
+
+    /*margin-top: 10%;*/
+    /*margin-left: 20%;*/
+
+    position: absolute;
+    top: 200px;
+    left: 550px;
+
+    opacity: 1;
+    /*transition: all 2s;*/
+}
+
+.container-pass.move{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.container-pass h1{
+    font-size: 30px;
+    color: brown;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.container-pass p{
+    font-size: 20px;
+    color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group{
+    margin: 10px 20px;
+
+    position: relative;
+}
+
+.form-group input:focus{
+    outline: 0;
+}
+
+.form-group label{
+    color: #f4f4f4;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 8px;
+}
+
+.btn{
+    width: 40%;
+    padding: 5px;
+    margin: 0 140px;
+    cursor: pointer;
+}
+
+
+.container-stopwatch{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 20px rgba(127,127,127,0.4);
+
+    border: 6px solid rgba(0,0,0,0.6);
+    border-radius: 10px;
+
+    position: absolute;
+    top: 200px;
+    left: 1800px;
+
+    opacity: 1;
+}
+
+.container-stopwatch.move{
+    left: 550px;
+    transition: all 2s;
+}
+
+.container-stopwatch.hide{
+    opacity: 0;
+    z-index: -2;
+    transition: all 2s;
+}
+
+.container-stopwatch h1{
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.container-stopwatch .display{
+    color: #f4f4f4;
+    font-size: 100px;
+    text-align: center;
+}
+
+.container-stopwatch button{
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+
+    margin-left: 175px;
+}
+
+.container-stopwatch button:hover{
+    cursor: pointer;
+}
+
+#eye{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    cursor: pointer;
+}
+
+
+.container-todolist{
+    width: 800px;
+    height: 600px;
+
+    background-color: rgba(0,0,0,0.4); 
+    /* box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    border: 6px solid brown;
+    border-radius: 10px;  */
+
+    position: absolute;
+    top: 100px;
+    left: 405px;
+
+    z-index: -2;
+
+    opacity: 0;
+}
+
+.container-todolist.show{
+    opacity: 1;
+    
+    transition: all 2s;
+
+    z-index: 1;
+}
+
+/* .container-todolist.show.do{
+    z-index: 1;
+
+    transition-delay: 3s;
+} */
+
+#todoform{
+    width: 50%;
+    margin: 0 25%;
+}
+
+.todoul{
+    height: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    overflow-y: auto;
+
+}
+
+.todoul li{
+    background-color: #fff;
+    font-size: 25px;
+    padding: 10px 5px;
+    border-top: 1px solid lightgray;
+
+    cursor: pointer;
+}
+
+.todoul li.completed{
+    color: darkgray;
+
+    text-decoration: line-through;
+}
+
+.container-todolist h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: wheat;
+    text-align: center;
+}
+
+.container-todolist .todolist{
+    width: 100%;
+    font-size: 30px;
+
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+    padding: 10px;
+    /* margin: 0 25%; */
+}
+
+.container-todolist .todolist:focus{
+    outline-color: darkblue;
+}
+
+small{
+    color: darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.fortodo{
+    width: 100%;
+    height: 300px;
+    background-color: darkgray;
+}
+
